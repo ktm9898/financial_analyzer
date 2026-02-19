@@ -1029,7 +1029,7 @@
                 <div className="max-w-4xl mx-auto my-8 print:m-0 print:p-0 animate-in fade-in slide-in-from-bottom-4 duration-700">
                     <div className="bg-white p-12 print:p-0 shadow-xl border border-slate-200 rounded-sm print-container report-view">
                         <div className="border-b-4 border-slate-900 pb-4 mb-6">
-                            <h1 className="text-3xl font-black text-slate-900 tracking-tight">기업 재무 AI 진단 리포트</h1>
+                            <h1 className="text-3xl font-black text-slate-900 tracking-tight">재무제표 AI 진단 리포트</h1>
                             <p className="text-sm text-slate-500 font-bold mt-2">Financial Analysis by Seoul Credit Guarantee Foundation</p>
                         </div>
 
@@ -1185,7 +1185,7 @@
 
                             <div className="flex justify-between items-center pt-10 border-t border-slate-200 no-print">
                                 <button onClick={() => { setFormData({ businessNumber: '', industry: '', foundationDate: '', majorProducts: '', financialFile: null }); setFilePreview(null); }} className="flex items-center gap-2 text-slate-400 hover:text-red-500 font-black text-sm transition-colors"><Icon name="rotate-ccw" size={16} /> 초기화</button>
-                                <button onClick={runAnalysis} disabled={isAnalyzing} className={`flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-sm font-black shadow-xl hover:bg-emerald-700 transition-all text-lg ${isAnalyzing ? 'opacity-50' : ''}`}><Icon name={isAnalyzing ? "loader-2" : "search"} size={22} className={isAnalyzing ? "animate-spin" : ""} />{isAnalyzing ? analysisStatus : "AI 재무 진단 시작"}</button>
+                                <button onClick={runAnalysis} disabled={isAnalyzing} className={`flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white rounded-sm font-black shadow-xl hover:bg-emerald-700 transition-all text-lg ${isAnalyzing ? 'opacity-50' : ''}`}><Icon name={isAnalyzing ? "loader-2" : "search"} size={22} className={isAnalyzing ? "animate-spin" : ""} />{isAnalyzing ? analysisStatus : "AI 진단 시작"}</button>
                             </div>
                         </div>
                     </div>
